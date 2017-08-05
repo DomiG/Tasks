@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fillWidth="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.domig.tasks.Controller">
+    <children>
+        <AnchorPane prefHeight="368.0" prefWidth="630.0" VBox.vgrow="ALWAYS">
+            <ProgressBar fx:id="bookProgressBar" layoutX="342.0" layoutY="278.0" prefHeight="18.0" prefWidth="239.0" progress="0.0" />
+            <CheckBox fx:id="moCheckBox" layoutX="98.0" layoutY="233.0" mnemonicParsing="false" text="Montag" />
+            <Text layoutX="15.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" wrappingWidth="72.99999713897705" />
+            <Button fx:id="saveButton" layoutX="561.0" layoutY="323.0" mnemonicParsing="false" onAction="#saveButtonPressed" text="Save" />
+            <Button fx:id="loadButton" layoutX="482.0" layoutY="323.0" mnemonicParsing="false" onAction="#loadButtonPressed" text="Load" />
+            <Button fx:id="bookConfigButton" layoutX="596.0" layoutY="274.0" mnemonicParsing="false" onAction="#bookConfigButtonPressed" text="c" />
+            <Button fx:id="task4ConfigButton" layoutX="596.0" layoutY="180.0" mnemonicParsing="false" onAction="#config4ButtonPressed" text="c" />
+            <Separator layoutX="12.0" layoutY="218.0" prefHeight="4.0" prefWidth="618.0" />
+            <CheckBox fx:id="tuCheckBox" layoutX="181.0" layoutY="233.0" mnemonicParsing="false" text="Dienstag" />
+            <CheckBox fx:id="weCheckBox" layoutX="266.0" layoutY="233.0" mnemonicParsing="false" text="Mittwoch" />
+            <CheckBox fx:id="thCheckBox" layoutX="351.0" layoutY="233.0" mnemonicParsing="false" text="Donnerstag" />
+            <CheckBox fx:id="frCheckBox" layoutX="445.0" layoutY="233.0" mnemonicParsing="false" text="Freitag" />
+            <Separator layoutX="12.0" layoutY="262.0" prefHeight="4.0" prefWidth="618.0" />
+            <Text layoutX="201.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aufgaben" textAlignment="CENTER" wrappingWidth="239.0000033378601" />
+            <Button fx:id="task1ConfigButton" layoutX="596.0" layoutY="43.0" mnemonicParsing="false" onAction="#config1ButtonPressed" text="c" />
+            <Button fx:id="task2ConfigButton" layoutX="596.0" layoutY="89.0" mnemonicParsing="false" onAction="#config2ButtonPressed" text="c" />
+            <Button fx:id="task3ConfigButton" layoutX="596.0" layoutY="136.0" mnemonicParsing="false" onAction="#config3ButtonPressed" text="c" />
+            <ProgressBar fx:id="task4ProgressBar" layoutX="384.0" layoutY="184.0" prefHeight="18.0" prefWidth="197.0" progress="0.0" />
+            <TextField fx:id="task4Progress" layoutX="276.0" layoutY="180.0" prefHeight="25.0" prefWidth="36.0" text="0" />
+            <Label fx:id="task4ProgressLabel" layoutX="317.0" layoutY="180.0" prefHeight="25.0" prefWidth="28.0" text="/00" textAlignment="CENTER" />
+            <ProgressBar fx:id="task3ProgressBar" layoutX="384.0" layoutY="140.0" prefHeight="18.0" prefWidth="197.0" progress="0.0" />
+            <TextField fx:id="task3Progress" layoutX="276.0" layoutY="136.0" prefHeight="25.0" prefWidth="36.0" text="0" />
+            <Label fx:id="task3ProgressLabel" layoutX="317.0" layoutY="136.0" prefHeight="25.0" prefWidth="28.0" text="/00" textAlignment="CENTER" />
+            <ProgressBar fx:id="task2ProgressBar" layoutX="384.0" layoutY="93.0" prefHeight="18.0" prefWidth="197.0" progress="0.0" />
+            <TextField fx:id="task2Progress" layoutX="276.0" layoutY="89.0" prefHeight="25.0" prefWidth="36.0" text="0" />
+            <Label fx:id="task2ProgressLabel" layoutX="317.0" layoutY="89.0" prefHeight="25.0" prefWidth="28.0" text="/00" textAlignment="CENTER" />
+            <ProgressBar fx:id="task1ProgressBar" layoutX="384.0" layoutY="47.0" prefHeight="18.0" prefWidth="197.0" progress="0.0" />
+            <TextField fx:id="task1Progress" layoutX="276.0" layoutY="43.0" prefHeight="25.0" prefWidth="36.0" text="0" />
+            <Label fx:id="task1ProgressLabel" layoutX="317.0" layoutY="43.0" prefHeight="25.0" prefWidth="28.0" text="/00" textAlignment="CENTER" />
+            <TextField fx:id="bookProgress" layoutX="302.0" layoutY="274.0" prefHeight="25.0" prefWidth="36.0" text="0" />
+            <Label fx:id="task1Label" layoutX="17.0" layoutY="48.0" prefHeight="17.0" prefWidth="220.0" text="x" />
+            <Label fx:id="task2Label" layoutX="17.0" layoutY="94.0" prefHeight="17.0" prefWidth="220.0" text="x" />
+            <Label fx:id="task3Label" layoutX="17.0" layoutY="140.0" prefHeight="17.0" prefWidth="220.0" text="x" />
+            <Label fx:id="task4Label" layoutX="17.0" layoutY="185.0" prefHeight="17.0" prefWidth="220.0" text="x" />
+            <Separator layoutX="12.0" layoutY="29.0" prefHeight="4.0" prefWidth="618.0" />
+            <Label fx:id="bookTitleLabel" disable="true" layoutX="12.0" layoutY="315.0" prefHeight="17.0" prefWidth="278.0" text="Buchtitel" />
+            <Button fx:id="plusButton1" layoutX="351.0" layoutY="44.0" mnemonicParsing="false" onAction="#plusButton1Pressed" text="+" />
+            <Button fx:id="plusButton2" layoutX="351.0" layoutY="90.0" mnemonicParsing="false" onAction="#plusButton2Pressed" text="+" />
+            <Button fx:id="plusButton3" layoutX="351.0" layoutY="137.0" mnemonicParsing="false" onAction="#plusButton3Pressed" text="+" />
+            <Button fx:id="plusButton4" layoutX="351.0" layoutY="180.0" mnemonicParsing="false" onAction="#plusButton4Pressed" text="+" />
+            <Button fx:id="minusButton1" layoutX="244.0" layoutY="44.0" mnemonicParsing="false" onAction="#minusButton1Pressed" text="-" />
+            <Button fx:id="minusButton2" layoutX="244.0" layoutY="90.0" mnemonicParsing="false" onAction="#minusButton2Pressed" text="-" />
+            <Button fx:id="minusButton3" layoutX="244.0" layoutY="137.0" mnemonicParsing="false" onAction="#minusButton3Pressed" text="-" />
+            <Button fx:id="minusButton4" layoutX="244.0" layoutY="180.0" mnemonicParsing="false" onAction="#minusButton4Pressed" text="-" />
+            <ComboBox fx:id="bookComboBox" layoutX="13.0" layoutY="275.0" prefHeight="25.0" prefWidth="278.0" />
+        </AnchorPane>
+    </children>
+</VBox>
